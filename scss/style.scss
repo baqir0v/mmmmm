@@ -11,7 +11,7 @@ main{
     grid-row-gap: 0px;
 }
 // navbar :start
-.navbar{
+.navbar1{
     position: sticky;
     left: 0;
     top: 0;
@@ -70,8 +70,8 @@ main{
     display: flex;
     align-items: center;
     .resumebox{
+        padding-top: 150px;
         padding-left: 50px;
-        margin-bottom: 100px;
         width: 70%;
         height: 50%;
         display: flex;
@@ -281,7 +281,85 @@ main{
             gap: 50px;
                 h2{
                     font-size: 50px;
+                    color: #343a40;
                 }
+                
         }
 }
 // interest :end
+// awards :start
+.awards{
+    width: 100%;
+    border-bottom: 1px solid #495057;
+    display: flex;
+    align-items: center;
+    grid-area: 6 / 2 / 7 / 6;
+        .awardbox{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+        h2{
+            font-size: 50px;
+            color: #343a40;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+            li{
+                font-size:20px ;
+                color: #6c757d;
+            }
+            i{
+               color: #ffc107; 
+            }
+}
+// awards :end
+// nav2 :start
+.nav2{
+    display: none;
+    width: 100%;
+    background-color: #bd5d38;
+    height: 60px;
+    position: fixed;
+        .nav2box{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            min-width:89vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                }
+                button{
+                    background-color: #bd5d38;
+                    border: 1px solid white;
+                    color: white;
+                    width: 100px;
+                    height: 50px;
+                }
+                i{
+                    font-size: 30px;
+                }
+        }
+
+}
+@media screen and (max-width:994px){
+    .navbar1{
+        display: none;
+    }
+    .nav2{
+        display: flex;
+    }
+}
+// nav2 :end

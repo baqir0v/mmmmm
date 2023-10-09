@@ -12,7 +12,7 @@ main {
   grid-row-gap: 0px;
 }
 
-.navbar {
+.navbar1 {
   position: sticky;
   left: 0;
   top: 0;
@@ -26,25 +26,25 @@ main {
   justify-content: center;
   gap: 20px;
 }
-.navbar .navtop {
+.navbar1 .navtop {
   border: 8px solid #ca7d60;
   width: 160px;
   height: 160px;
   border-radius: 160px;
 }
-.navbar .navtop:hover {
+.navbar1 .navtop:hover {
   cursor: pointer;
 }
-.navbar img {
+.navbar1 img {
   width: 100%;
   height: 100%;
   border-radius: 160px;
 }
-.navbar .navbottom {
+.navbar1 .navbottom {
   width: 100%;
   text-align: center;
 }
-.navbar ul {
+.navbar1 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -52,12 +52,12 @@ main {
   align-items: center;
   gap: 20px;
 }
-.navbar a {
+.navbar1 a {
   text-decoration: none;
   font-size: 25px;
   color: #e1b6a5;
 }
-.navbar a:hover {
+.navbar1 a:hover {
   color: white;
   cursor: pointer;
 }
@@ -71,8 +71,8 @@ main {
   align-items: center;
 }
 .resume .resumebox {
+  padding-top: 150px;
   padding-left: 50px;
-  margin-bottom: 100px;
   width: 70%;
   height: 50%;
   display: flex;
@@ -272,4 +272,79 @@ main {
 }
 .int .intbox h2 {
   font-size: 50px;
+  color: #343a40;
+}
+
+.awards {
+  width: 100%;
+  border-bottom: 1px solid #495057;
+  display: flex;
+  align-items: center;
+  grid-area: 6/2/7/6;
+}
+.awards .awardbox {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.awards h2 {
+  font-size: 50px;
+  color: #343a40;
+}
+.awards ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.awards li {
+  font-size: 20px;
+  color: #6c757d;
+}
+.awards i {
+  color: #ffc107;
+}
+
+.nav2 {
+  display: none;
+  width: 100%;
+  background-color: #bd5d38;
+  height: 60px;
+  position: fixed;
+}
+.nav2 .nav2box {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 89vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav2 .nav2box a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.nav2 .nav2box button {
+  background-color: #bd5d38;
+  border: 1px solid white;
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+.nav2 .nav2box i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 994px) {
+  .navbar1 {
+    display: none;
+  }
+  .nav2 {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
