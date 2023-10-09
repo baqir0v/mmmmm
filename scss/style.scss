@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+// navbar :start
+.navbar{
+    position: sticky;
+    left: 0;
+    top: 0;
+    grid-area: 1 / 1 / 7 / 2;
+    width: 100%;
+    height: 100vh;
+    background-color: #bd5d38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .navtop{
+        border:8px solid #ca7d60;
+        width: 160px;
+        height: 160px;
+        border-radius: 160px;
+    }
+        .navtop:hover{
+            cursor: pointer;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 160px;
+        }
+    .navbottom{
+        width: 100%;
+        text-align: center;
+    }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            color: #e1b6a5;
+        }
+        a:hover{
+            color: white;
+            cursor: pointer;
+        }
+}
+// navbar :end
+// resume :start
+.resume{
+    width: 100%;
+    border-bottom: 1px solid #495057;
+    height: 100vh;
+    grid-area: 1 / 2 / 2 / 6;;
+    display: flex;
+    align-items: center;
+    .resumebox{
+        padding-left: 50px;
+        margin-bottom: 100px;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+        h1{
+            font-size: 60px;
+            color: #343a40;
+        }
+            .taylor{
+                color: #bd5d38;
+            }
+        p{
+            font-size: 20px;
+        }
+        .resumetext{
+            font-size: 20px;
+        }
+            a{
+                color: #bd5d38;
+            }
+                a:hover{
+                    filter: brightness(70%);
+                }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+        li{
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            background-color: #495057;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            li:hover{
+                background-color: #bd5d38;
+                cursor: pointer;
+            }
+            i{
+                color: white;
+                font-size: 20px;
+            }
+}
+// resume :end
+// exp :start
+.exp{
+    grid-area: 2 / 2 / 3 / 6;
+    width: 100%;
+    border-bottom: 1px solid #495057;
+    display: flex;
+    align-items: center;
+        .expbox{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+        }
+            h2{
+                font-size: 60px;
+                color: #343a40;
+            }
+            .txt{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .period {
+                    display: flex;
+                    justify-content: space-between;
+                        .date{
+                            color: #bd5d38;
+                        }
+                }
+
+            }
+
+                h3{
+                    font-size: 30px;
+                    color: #343a40;
+                }
+                .subtext{
+                    color: #495057;
+                    font-size: 20px;
+                }
+                p{
+                    color: #495057;
+                }
+}
+// exp :end
+// edu :start
+.edu{
+    width: 100%;
+    border-bottom: 1px solid #495057;
+    display: flex;
+    align-items: center;
+    grid-area: 3 / 2 / 4 / 6;
+        .edubox{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+            h2{
+                font-size: 60px;
+                color: #343a40;
+            }
+            .txt{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .period {
+                    display: flex;
+                    justify-content: space-between;
+                        .date{
+                            color: #bd5d38;
+                        }
+                }
+
+            }
+
+                h3{
+                    font-size: 30px;
+                    color: #343a40;
+                }
+                .subtext{
+                    color: #495057;
+                    font-size: 20px;
+                }
+                p{
+                    color: #495057;
+                }
+        }
+}
+// edu :end
+// skills :start
+.skills{
+    width: 100%;
+    border-bottom: 1px solid #495057;
+    display: flex;
+    align-items: center;
+    grid-area: 4 / 2 / 5 / 6;
+        .skillsbox{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+                h2{
+                    font-size: 40px;
+                    color: #343a40;
+                }
+                .txt{
+                    color: #495057;
+                    font-size: 25px;
+                }
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    list-style: none;
+                        li{
+                            color: #6c757d;
+                            font-size: 50px;
+                        }
+                }
+                .ul1{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    list-style: none;
+                        li{
+                            color: #6c757d;
+                            font-size: 20px;
+                        }
+                }
+
+        }
+}
+// skills :end
+// interest :start
+.int{
+    width: 100%;
+    border-bottom: 1px solid #495057;
+    display: flex;
+    align-items: center;
+    grid-area: 5 / 2 / 6 / 6;
+        .intbox{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+                h2{
+                    font-size: 50px;
+                }
+        }
+}
+// interest :end
